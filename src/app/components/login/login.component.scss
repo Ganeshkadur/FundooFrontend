@@ -1,0 +1,90 @@
+.login-footer-main-cnt{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+gap:10px;
+height:100vh;
+}
+
+
+.login-outer-cnt{
+   width:350px;
+   padding:20px; 
+   border:1px solid black;
+   border-radius: 6px;
+  
+   display:flex;
+   flex-direction: column;
+  
+}
+.title-subtitle-cnt{
+width:100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:10px;
+margin-bottom: 10px;
+}
+.login-title{
+    color:rgb(228, 184, 39);
+    
+    font-size: 20px;
+    font-weight: 600;
+
+    
+}
+.login-subtitle-1{
+    font-size: 20px;
+   
+    font-weight: 500;
+}
+.login-subtitle-2{
+    font-size: 15px;
+    
+    font-weight: 400;  
+}
+
+.login-form-input{
+  width:100%;
+ 
+
+}
+.login-forgot-btn{
+    width:min-content;
+    font-size: 15px;
+    
+    font-weight: 300px;
+    color: rgb(12, 12, 181); 
+}
+
+.login-footer-btn-ctn{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-footer-cnt{
+    display: flex;
+    justify-content: end;
+    gap:20px;
+    width:400px;
+}
+.login-footer-btn-1{
+    font-size: 15px;
+    
+    font-weight: 500;
+    color: rgb(12, 12, 181);    
+}
+.login-footer-btn-2{
+    //font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.login-footer-titles{
+    font-size: 12px;
+    color: rgb(117, 117, 117);
+    font-weight: 500;
+}
+
+
