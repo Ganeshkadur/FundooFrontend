@@ -1,50 +1,53 @@
 <div class="signup-footer-main-cnt">
     <div class="signup-outer-cnt">
-        <div class="signup-inner-cnt">
+        <form class="signup-inner-cnt" [formGroup]="signupForm" (ngSubmit)="handelRegistartion()">
             <div class="signup-subtitles">
                 <span style=" color:rgb(228, 184, 39);font-size: 20px;font-weight: 800;margin-bottom: 5px;">Fundo</span>
                 <span style="font-size: 18px;font-weight: 500;"> Create your Fundo Account</span>
             </div>
              <div class="signup-name-input-cnt">
-                 <mat-form-field appearance="outline" class="login-form-input">
+                 <mat-form-field appearance="outline" class="login-form-input" >
                      <mat-label>First name</mat-label>
-                     <input matInput placeholder="Placeholder">
-                    
+                     <input formControlName="firstName" matInput placeholder="Placeholder">
+                    <mat-error *ngIf="submitted && signupForm.get('firstName')?.hasError('required')">Name Required</mat-error>
                    </mat-form-field>
-                   <mat-form-field appearance="outline" class="login-form-input">
+
+                
+                   <mat-form-field appearance="outline" class="login-form-input" >
                      <mat-label>Last name</mat-label>
-                     <input matInput placeholder="Placeholder">
-                    
+                     <input formControlName="lastName" matInput placeholder="Placeholder">
+                      <mat-error *ngIf="submitted && control['lastName']?.hasError('required')">Last Name Required</mat-error>
                    </mat-form-field>
             </div>
             <div class="signup-username-info-cnt">
-                 <mat-form-field appearance="outline" class="login-form-input">
+                 <mat-form-field appearance="outline" class="login-form-input" >
                      <mat-label>user name</mat-label>
-                     <input matInput placeholder="Placeholder">
+                     <input formControlName="email" matInput placeholder="Placeholder">
                      <mat-hint>You can use letters numbers & periods</mat-hint>
+                     <mat-error *ngIf="submitted && control['email']?.hasError('required')">Email required</mat-error>
                  </mat-form-field>
                  <!-- <span class="signup-staticfield">You can use letters numbers & periods</span> -->
             </div>
            
             <div class="signup-password-cnt">
-             <mat-form-field appearance="outline" class="login-form-input">
+             <mat-form-field appearance="outline" class="login-form-input" >
                  <mat-label>Password</mat-label>
-                 <input matInput placeholder="Placeholder">
-                
+                 <input formControlName="password" matInput placeholder="Placeholder">
+                <mat-error *ngIf="submitted && control['password']?.hasError('required')">Password required</mat-error>
                </mat-form-field>
-               <mat-form-field appearance="outline" class="login-form-input">
+               <mat-form-field appearance="outline" class="login-form-input" >
                  <mat-label>Confirm</mat-label>
-                 <input matInput placeholder="Placeholder">
-                 
+                 <input formControlName="confirmPassword" matInput placeholder="Placeholder">
+                 <mat-error *ngIf="submitted && control['confirmPassword']?.hasError('required')">Confirm Password required</mat-error>
                </mat-form-field>
      
             </div>
             <span class="signup-staticfield">Use 8 or more charecters with a mix of letters,numbers & symbols</span> 
             <div class="signup-signin-register-cnt">
              <button mat-button color="primary" >Sign in instead</button>
-             <button mat-raised-button color="primary" style="background-color: rgb(77, 172, 72);" >Register</button>
+             <button mat-raised-button color="primary" style="background-color: rgb(77, 172, 72);" type="submit">Register</button>
             </div>
-        </div>
+        </form>
         <div>
      
         </div>
