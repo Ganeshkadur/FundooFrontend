@@ -1,0 +1,10 @@
+<div>
+    <app-note-create (updatedList)="updateNoteList($event)"></app-note-create>
+</div>
+
+    
+
+
+<div *ngFor="let note of notesList" style="display: inline-block;flex-wrap: wrap;">
+    <app-note [noteObj]="note" (updateList)="updateNoteList($event)" [container]="'notes'"></app-note>
+</div>

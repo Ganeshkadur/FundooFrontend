@@ -1,0 +1,4 @@
+<div *ngFor="let note of notesList" style="display: inline-block;flex-wrap: wrap;">
+
+    <app-note [noteObj]="note" (updateList)="updateArchiveNoteList($event)"  [container]="'archive'"></app-note>
+</div>

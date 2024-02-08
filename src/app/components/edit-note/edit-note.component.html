@@ -1,0 +1,33 @@
+<div style="background-color:#949393;">
+
+    <mat-dialog-content class="mat-typography" >
+        <div class="takenote-input-1-cnt">
+            <input class="takenote-inputs-1" [(ngModel)]="title" placeholder="Title">
+            <div><img src="../../../assets/images/note-icon/takenotehover/pin.svg"></div>
+        </div>
+        <div>
+            <input class="takenote-inputs-2" [(ngModel)]="desc" placeholder="Take notes">
+        </div>
+</mat-dialog-content>       
+<mat-dialog-actions align="end" style="margin-bottom: -3px;justify-content:'center';margin-left: -51px;padding:5px;">
+            <div class="takenotes-icon-cnt">
+                <div><img src="../../../assets/images/note-icon/takenotehover/alert.svg"></div>
+                <div><img src="../../../assets/images/note-icon/takenotehover/collaborator.svg"></div>
+                <div><img src="../../../assets/images/note-icon/takenotehover/addcolor.svg"></div>
+                <div><img src="../../../assets/images/note-icon/takenotehover/imageicon.svg"></div>
+                <div><img src="../../../assets/images/note-icon/takenotehover/archive.svg"></div>
+                <div><img src="../../../assets/images/note-icon/takenotehover/verticle3dots.svg"></div>
+            </div>
+            <div class="takenotes-undo-icon" >
+                <div><img src="../../../assets/images/note-icon/takenotehover/undo.svg"></div>
+                <div><img src="../../../assets/images/note-icon/takenotehover/redo.svg"></div>
+               
+            </div>
+            <div class="takenotes-close-btn" (click)="handleEditNote()" >Close</div>
+      
+</mat-dialog-actions>
+
+</div>
+
+
+

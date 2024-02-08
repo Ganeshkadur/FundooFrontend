@@ -1,0 +1,64 @@
+::ng-deep .app-sidenav-cnt{
+    display:block;
+    height: calc( 100vh - 90px);
+}
+
+
+
+.sidenav-cnt{
+    background-color: #ffffff;
+    // border: 1px solid white;
+    width:160px;
+    
+}
+.sidenav-cnt-2{
+    background-color: #ffffff;
+    // height: 100vh; 
+}
+.example-container{
+    display:block;
+    height: calc( 100vh - 58px);   
+}
+
+// .takenotes-main-cnt{
+//     height: 43px;
+//     padding: 10px;
+//     width: 620px;
+//     display: flex;
+//     gap:10px;
+//     border-radius: 13px;
+//     background-color: #202124;
+//     /* border: 1px solid black; */
+// }
+
+// .takenotes-input{
+//     background-color: #202124;
+//     color:#a09c9c;
+//     font-weight: 400;
+//     font-size: 18px;
+//     border: none;
+//     outline: none;
+// }
+// .takenotes-inner-cnt{
+//     height: 43px;
+//     display: flex;
+//     gap:30px;
+//     align-items: center;
+//     justify-content: center;
+//     /* border: 1px solid black; */
+// }
+// .mat-drawer-cnt{
+//     display: flex;
+//     width: 12%;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-self: start;
+//     gap:60px;
+//     // margin-top: 30px;
+//     background-color:  #ffffff;
+//     //   background-color: transparent;
+//     padding-top: 30px;
+
+    
+
+// }

@@ -1,0 +1,35 @@
+<div class="takenotes-main-cnt" *ngIf="toggleClose else open" (click)="toggle('open')">
+    <input class="takenotes-input" placeholder="Take a note..." style="width:500px" />
+    <div class="takenotes-inner-cnt"  style="background-color: transparent;">
+        <div><img src="../../../assets/images/note-icon/takenotebox/checkbox.svg"></div>
+        <div><img src="../../../assets/images/note-icon/takenotebox/brush.svg"></div>
+        <div><img src="../../../assets/images/note-icon/takenotebox/imageicon.svg"></div>
+    </div>
+   </div>
+   <ng-template #open >
+    <div class="takenotes-main-cnth">
+      <div class="takenote-input-1-cnt">
+          <input class="takenote-inputs-1" [(ngModel)]="title" placeholder="Title">
+          <div><img src="../../../assets/images/note-icon/takenotehover/pin.svg"></div>
+      </div>
+      <div>
+          <input class="takenote-inputs-2" [(ngModel)]="desc" placeholder="Take notes">
+      </div>
+      <div class="takenotes-icon-main-cnt" >
+          <div class="takenotes-icon-cnt">
+              <div><img src="../../../assets/images/note-icon/takenotehover/alert.svg"></div>
+              <div><img src="../../../assets/images/note-icon/takenotehover/collaborator.svg"></div>
+              <div><img src="../../../assets/images/note-icon/takenotehover/addcolor.svg"></div>
+              <div><img src="../../../assets/images/note-icon/takenotehover/imageicon.svg"></div>
+              <div><img src="../../../assets/images/note-icon/takenotehover/archive.svg"></div>
+              <div><img src="../../../assets/images/note-icon/takenotehover/verticle3dots.svg"></div>
+          </div>
+          <div class="takenotes-undo-icon" >
+              <div><img src="../../../assets/images/note-icon/takenotehover/undo.svg"></div>
+              <div><img src="../../../assets/images/note-icon/takenotehover/redo.svg"></div>
+             
+          </div>
+          <div class="takenotes-close-btn" (click)="toggle('close')" >Close</div>
+      </div>
+  </div>
+   </ng-template>

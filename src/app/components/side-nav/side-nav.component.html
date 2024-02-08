@@ -1,0 +1,42 @@
+<mat-drawer-container  class="example-container" [hasBackdrop]="false" >
+    <mat-drawer [opened]="state" #drawer [mode]="'over'" class="sidenav-cnt" >
+    <div style="display: grid; margin-top: 10px;margin-left: 10px ;color: rgb(0, 0, 0);width:40px">
+
+      <div (click)="hadleNavigation('notes')" style="display: flex;gap:15px;align-items: center;"><img src="../../../assets/images/sidenavbar-icon/bulb.svg"><span  style="margin-top: 5px; font-weight: 700;">Notes</span></div>
+      <br>
+      <div (click)="hadleNavigation('reminders')" style="display: flex;gap:15px"><img src="../../../assets/images/sidenavbar-icon/notification.svg"><span  style="margin-top: 5px; font-weight: 700;">Reminder</span></div>
+      <br>
+      <div (click)="hadleNavigation('edit')" style="display: flex;gap:15px;margin-top:6px"><img src="../../../assets/images/sidenavbar-icon/edit.svg"><span  style="margin-top: 5px; font-weight: 700;">Edit</span></div>
+      <br>
+      <div (click)="hadleNavigation('archive')" style="display: flex;gap:15px;margin-top: 5px"><img src="../../../assets/images/sidenavbar-icon/archive.svg"><span  style="margin-top: 5px; font-weight: 700;">Archive</span></div>
+      <br>
+      <div (click)="hadleNavigation('trash')" style="display: flex;gap:15px;    margin-top: 4px"><img src="../../../assets/images/sidenavbar-icon/trash.svg"><span  style="margin-top: 5px; font-weight: 700;">Trash</span></div>
+      
+    </div>
+    </mat-drawer>
+    <mat-drawer-content style="background-color: #ffffff;margin-bottom: 100px;" > 
+      <!-- background-color: #202124;margin-bottom: 100px; -->
+      <div style="display: flex;gap:130px" class="sidenav-cnt-2">
+        <div style="display: block;  margin-top: 10px; margin-left: 10px;">
+
+          <img src="../../../assets/images/sidenavbar-icon/bulb.svg" (click)="hadleNavigation('notes')" style="margin-top: 1px;">
+          <br>
+          <img src="../../../assets/images/sidenavbar-icon/notification.svg" (click)="hadleNavigation('reminders')" style="margin-top: 19px;">
+          <br>
+          <img src="../../../assets/images/sidenavbar-icon/edit.svg" (click)="hadleNavigation('edit')" style="margin-top: 20px;">
+          <br>
+          <img src="../../../assets/images/sidenavbar-icon/archive.svg" (click)="hadleNavigation('archive')" style="margin-top: 20px;">
+          <br>
+           <img src="../../../assets/images/sidenavbar-icon/trash.svg" (click)="hadleNavigation('trash')" style="margin-top: 20px;">
+          
+        </div>
+         <div style="width: 100%;background-color:#ffffff ;" > <!--[ngClass]="{ 'any': backgroundState, 'two': !backgroundState }"-->
+
+        <router-outlet></router-outlet>
+         </div>
+
+      </div>
+     
+    </mat-drawer-content>
+  </mat-drawer-container>
+  

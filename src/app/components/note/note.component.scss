@@ -1,0 +1,186 @@
+.takenotes-main-cnt {
+    width: 210px;
+    height: max-content;
+    padding: 6px;
+    border: 1px solid #000000;
+    background-color: #ffffff;//transparenr
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 9px;
+    margin-top: 38px;
+    // box-shadow: 4px -11px 7px 2px rgba(8, 8, 8, 0.1);
+    box-shadow: 4px -6px 7px 2px rgba(0, 0, 0, 0.5);
+    position: relative; 
+}
+
+.takenotes-main-cnt:hover .takenotes-icon-main-cnt {
+    opacity: 1;
+}
+.pin-icon{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.takenotes-main-cnt:hover .pin-icon {
+    opacity: 1; 
+}
+
+.takenote-input-1-cnt {
+    height: max-content;
+    width: 221px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.takenote-inputs-1 {
+    width: 195px;
+    height: max-content;
+    word-wrap: break-word;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+.takenote-inputs-2 {
+    width: auto;
+    height: max-content;
+    word-wrap: break-word;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.takenotes-icon-main-cnt {
+    display: flex;
+    gap: 40px;
+    margin-top: 12px;
+    margin-left: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.takenotes-icon-cnt {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: -12px;
+    justify-content: center;
+}
+
+.takenotes-undo-icon {
+    display: flex;
+    gap: 30px;
+}
+
+.color-palate-cnt{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    padding: 4px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    div{
+        width: 30px;
+        height: 30px;
+        border-radius: 200px;
+        margin: 8px 0px;
+
+        &:nth-child(1){
+          background-color: #ffffff;
+          
+          border: 1px solid #e7e7bc;
+        }
+        &:nth-child(2){
+            background-color: #f1938b;
+    border: 1px solid #ea9088;
+        }
+        &:nth-child(3){
+            background-color: #de8c63;
+    border: 1px solid #e69065;
+        }
+        &:nth-child(4){
+            background-color: #e6db7a;
+    border: 1px solid #e2d984;
+            
+        }
+        &:nth-child(5){
+            background-color: #bef494;
+    border: 1px solid #bbf291;
+            
+        }
+        &:nth-child(6){
+            background-color: #5eebc8;
+    border: 1px solid #7ae6cb;
+            
+        }
+        &:nth-child(7){
+            background-color: #b3e0f9;
+    border: 1px solid #a1d1ed;
+            
+        }
+        &:nth-child(8){
+            background-color: #98c7e0;
+    border: 1px solid #9cd6f5;
+        }
+        &:nth-child(9){
+            background-color: #e3b5f5;
+    border: 1px solid #e4c1f1;
+            
+        }
+        &:nth-child(10){
+            background-color: #eccfc7;
+    border: 1px solid #f5cec4
+
+        }
+        &:nth-child(11){
+            background-color: #fdebbf;
+    border: 1px solid #ffeec3
+            
+        }
+        &:nth-child(12){
+            background-color: #c7c7f3;
+    border: 1px solid #c7c7f8;
+            
+        }
+
+    }
+
+   
+}
+
+
+.show-more-cnt{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+    
+    div{
+
+    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    }
+
+}
+

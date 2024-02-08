@@ -1,0 +1,48 @@
+<div class="header-main-cnt" >
+    <div class="header-inner-cnt-1" style="width:232px;">
+        
+        <div><img class="header-icon-3lines" src="../../../assets/images/navbar-icon/menu.svg" (click)="toggleDrawerState()"   ></div>
+           <div class="header-image-fundoo-cnt">
+                 <div><img src="../../../assets/images/navbar-icon/keep-ic.png" style="height: 43px;"></div>
+                 <div class="header-font-fundoo" >Fundoo</div>
+           </div>
+    </div> 
+    <div class="header-inner-cnt-2" style="width:777px;border-radius: 5px;">
+        
+        <div class="header-search-cnt">
+            <div><img class="header-icon-search" src="../../../assets/images/navbar-icon/search1.svg"  ></div>
+            <input class="header-search-input-field" placeholder="Search">
+            <div><img class="header-icon-search" src="../../../assets/images/navbar-icon/close1.svg"  ></div>
+        </div>
+    </div>
+    <div style="display:flex;gap:27px;margin-left: 164px;">
+        <div class="header-inner-cnt-3" style="width:144px;">
+
+            <div class="header-refresh-setting-cnt">
+             <div><img class="header-side-icons" src="../../../assets/images/navbar-icon/refresh1.svg"  ></div>
+             <div><img class="header-side-icons" src="../../../assets/images/navbar-icon/grid1.svg"></div>
+             <div><img class="header-side-icons" src="../../../assets/images/navbar-icon/settings1.svg"></div>
+            </div>
+    
+        </div>
+        <div class="header-inner-cnt-4" style="width:124px;">
+    
+            <div class="header-app-acc-cnt">
+              <div><img class="header-side-icons" src="../../../assets/images/navbar-icon/apps1.svg" (click)="toggleBackGround(backgroundstate ? false :true)"></div>
+              <div><img class="header-side-icons" src="../../../assets/images/navbar-icon/account1.svg"  [matMenuTriggerFor]="menu"></div>
+            </div>
+            <mat-menu #menu="matMenu" yPosition="below">
+                <div class="show-more-cnt">
+
+                    <div (click)="hadleNavigation('login')">LogOut</div>
+                </div>
+                </mat-menu>
+
+
+        </div>
+
+    </div>
+    
+
+</div>
+

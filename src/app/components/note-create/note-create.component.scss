@@ -1,0 +1,116 @@
+
+.takenotes-main-cnt{
+    height: 35px;
+    padding: 5px;
+    width: 620px;
+    display: flex;
+    gap: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 229px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    
+}
+
+.takenotes-input{
+    background-color: #ffffff;
+    color:#000000;
+    font-weight: 200;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.takenotes-inner-cnt{
+    height: 43px;
+    display: flex;
+    gap:50px;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+
+//after clicking the input
+
+
+.takenotes-main-cnth{
+    width: 631px;
+    height: max-content;
+    padding: 5px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: 227px;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+ 
+ 
+
+.takenote-input-1-cnt{
+    height: max-content;
+    width: 620px;
+    display: flex;
+    
+    
+  
+}
+.takenote-inputs-1{
+    width: 620px; 
+    height: max-content;
+    word-wrap: break-word;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 12px;
+ margin-left: 10px;
+}
+.takenote-inputs-2{
+    width: 612px; 
+    height: max-content;
+    word-wrap: break-word;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 12px;
+ margin-left: 10px;
+}
+.takenotes-icon-main-cnt{
+    display: flex;
+    gap:40px;
+    margin-top: 12px;
+    margin-left: 10px;
+    
+   
+}
+.takenotes-icon-cnt{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    justify-content: center;
+   
+}
+.takenotes-undo-icon{
+    display: flex;
+    gap: 30px;
+}
+.takenotes-close-btn{
+    margin-left: 68px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

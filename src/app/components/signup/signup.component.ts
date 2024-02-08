@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { log } from 'console';
 import { UserService } from 'src/app/services/user-service/user.service';
 
@@ -12,7 +13,7 @@ export class SignupComponent implements OnInit {
 public signupForm!: FormGroup
   submitted: boolean = false
 
-  constructor(public formBuilder :FormBuilder,public userService:UserService) { 
+  constructor(public formBuilder :FormBuilder,public userService:UserService,public router:Router) { 
     
   }
 
@@ -40,6 +41,9 @@ public signupForm!: FormGroup
       console.log(error);
       
      })
+  }
+  Navigatetologin(){
+    this.router.navigate(["login"])
   }
 
 }

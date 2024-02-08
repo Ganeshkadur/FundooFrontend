@@ -1,0 +1,107 @@
+.header-main-cnt{
+    border-bottom:1px solid rgb(0, 0, 0);
+    // width: 99.55%;
+    height: 51px;
+    display: flex;
+    gap:50px;
+    padding:3px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.header-inner-cnt-1{
+    display: flex;
+    /* gap:10px; */
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 10px; */
+}
+.header-icon-3lines{
+    width: 26px;
+    height:24px;
+    padding: 15px;
+    
+    margin-left: -25px;
+
+}
+
+.header-image-fundoo-cnt{
+   
+    // border:1px solid rgb(249, 249, 249);
+    display: flex;
+    gap:10px ;
+    align-items: center;
+    justify-content: center;
+}
+.header-font-fundoo{
+    font-family: sans-serif;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+.header-search-cnt{
+    // border:1px solid rgb(255, 255, 255);
+    display: flex;
+    gap:10px;
+    height:45px;
+    background-color: rgb(156, 156, 156);
+    border-radius: 4px;
+}
+
+.header-icon-search{
+    height: 24px;
+    padding: 7px;
+}
+.header-search-input-field{
+     width:677px;
+    //  background-color: #202124;
+     border:none;
+     outline: none;
+     font-size: 20px;
+     background-color: transparent;
+     color: rgb(244, 244, 244);
+}
+.header-search-cnt:hover{
+    background-color: rgb(95, 92, 92);
+    
+}
+.header-refresh-setting-cnt{
+    // border:1px solid rgb(255, 255, 255);
+    display: flex;
+    gap:3px
+}
+.header-app-acc-cnt{
+    // border:1px solid rgb(255, 255, 255);
+    display: flex;
+    gap:10px
+    
+}
+.header-side-icons{
+    height: 27px;
+    padding: 7px; 
+    
+}
+
+svg{
+    color: rgb(220, 207, 207);
+}
+
+.show-more-cnt{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+    
+    div{
+
+    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    }
+
+}
