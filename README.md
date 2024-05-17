@@ -1,27 +1,36 @@
-# FandooApp
+Fandoo
+-
+Google Keep clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+Sign up page
+![signup page](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/6ed8a53b-ed93-4efd-bceb-bfceaeb322b3)
 
-## Development server
+login page
+![login section](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/6710a6fb-1236-4769-b424-1a20bb767d5f)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Dashboard
+![dashboard 2](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/5a9010af-2f90-4399-86fd-70d74b4da80e)
 
-## Code scaffolding
+Creating note
+![create note section](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/9355a250-b958-47b5-89e4-bde690cabc18)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Editing a Note
+![editing note](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/411f62c3-9200-416f-98c5-e962e081f78a)
 
-## Build
+Adding color 
+![adding color](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/34fe42f8-bef3-421c-af46-4fb5c5bb57df)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Deleting a note
+![deleting note](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/d8281269-0de3-437a-a3e2-21cc1789c10f)
 
-## Running unit tests
+Archive 
+![archive container](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/13d788df-bbbc-4bf9-af05-6bcb42d2735f)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+trash
+![trash container](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/607257f6-6179-409b-a051-e55e3b5867a5)
 
-## Running end-to-end tests
+Remineder
+![reminder component](https://github.com/Ganeshkadur/DemoFileUpload/assets/116633717/b37a5fe1-a635-4255-bdaa-b1588abee7c8)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
